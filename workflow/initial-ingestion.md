@@ -21,3 +21,8 @@ a string, which has implications for users trying to do IP range searches or
 anything with CIDR notation, which becomes esp. important when log data is used
 for security purposes.
 5. Lather rinse repeat
+
+NOTE: (4) may not be necessary if we can use geoip in logstash filters, but I 
+have not completely gone through this process myself, so can't say at this 
+moment. Seems reasonable though as the default logstash template in templates/ 
+has a geoip.ip field with the right type
